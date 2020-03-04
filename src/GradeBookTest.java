@@ -49,6 +49,12 @@ public class GradeBookTest {
     }
 
     @Test
+    public void getScoreSizeTest() {
+        assertEquals(5, g1.getScoreSize(), .001);
+        assertEquals(5, g2.getScoreSize(), .001);
+    }
+
+    @Test
     public void toStringtest() {
         assertTrue(g1.toString().equals(" 5.0 72.0 91.0 100.0 0.0"));
         assertTrue(g2.toString().equals(" 62.2 9.16 99.4 100.0 81.3"));
